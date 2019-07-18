@@ -1,4 +1,6 @@
 //webkitURL is deprecated but nevertheless
+//Speech to text
+
 URL = window.URL || window.webkitURL;
 
 var gumStream; 						//stream from getUserMedia()
@@ -18,10 +20,6 @@ var pauseButton = document.getElementById("pauseButton");
 recordButton.addEventListener("click", startRecording);
 stopButton.addEventListener("click", stopRecording);
 pauseButton.addEventListener("click", pauseRecording);
-
-
-
-
 
 
 
@@ -281,15 +279,7 @@ function showButtons(style) {
 }
 
 
-
-
-
-
-
-
-
-
-
+//Audio Recording Code
 
 function startRecording() {
 	console.log("recordButton clicked");   
